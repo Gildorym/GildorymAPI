@@ -5,6 +5,11 @@ import java.util.Set;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * Represents an item kit
+ * @author Lucariatias
+ *
+ */
 public interface Kit extends Set<ItemStack> {
 	
 	/**

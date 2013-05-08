@@ -5,6 +5,11 @@ import java.util.Collection;
 import org.bukkit.entity.Player;
 import com.gildorymrp.api.core.Character;
 
+/**
+ * Represents a core plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymCorePlugin {
 	
 	/**

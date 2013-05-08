@@ -2,6 +2,11 @@ package com.gildorymrp.api.regions;
 
 import org.bukkit.Location;
 
+/**
+ * Represents a cuboid-shaped region
+ * @author Lucariatias
+ *
+ */
 public interface CuboidRegion {
 	
 	/**

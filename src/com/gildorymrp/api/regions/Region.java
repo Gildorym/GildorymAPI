@@ -2,6 +2,11 @@ package com.gildorymrp.api.regions;
 
 import org.bukkit.Location;
 
+/**
+ * Represents an area
+ * @author Lucariatias
+ *
+ */
 public interface Region {
 	
 	/**

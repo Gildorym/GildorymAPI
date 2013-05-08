@@ -3,6 +3,11 @@ package com.gildorymrp.api.charactercards;
 import org.bukkit.entity.Player;
 import com.gildorymrp.api.core.Character;
 
+/**
+ * Represents a character cards plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymCharacterCardsPlugin {
 	
 	/**

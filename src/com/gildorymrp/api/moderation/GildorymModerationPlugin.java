@@ -9,6 +9,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * Represents a moderation plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymModerationPlugin {
 	
 	/**
@@ -30,8 +35,8 @@ public interface GildorymModerationPlugin {
 	/**
 	 * Gets a map of dates to the content changes
 	 * 
-	 * @param inventory
-	 * @return
+	 * @param inventory the inventory
+	 * @return a map of dates to itemstack changes in the inventory
 	 */
 	public Map<Date, ItemStack> getInventoryContentChanges(Inventory inventory);
 	

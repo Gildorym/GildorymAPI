@@ -2,6 +2,11 @@ package com.gildorymrp.api.portals;
 
 import java.util.Collection;
 
+/**
+ * Represents a portals plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymPortalsPlugin {
 	
 	/**

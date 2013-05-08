@@ -1,5 +1,10 @@
 package com.gildorymrp.api.classes;
 
+/**
+ * An enum containing combat classes
+ * @author Lucariatias
+ *
+ */
 public enum Class {
 	
 	BARBARIAN,

@@ -5,6 +5,11 @@ import org.bukkit.entity.Player;
 
 import com.gildorymrp.api.core.Character;
 
+/**
+ * Represents a professions plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymProfessionsPlugin {
 	
 	/**

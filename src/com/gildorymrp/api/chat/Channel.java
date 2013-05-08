@@ -5,6 +5,11 @@ import java.util.Collection;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
+/**
+ * Represents a chat channel
+ * @author Lucariatias
+ *
+ */
 public interface Channel {
 	
 	/**

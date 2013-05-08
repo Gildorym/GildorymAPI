@@ -4,6 +4,11 @@ import java.util.Collection;
 
 import org.bukkit.entity.Player;
 
+/**
+ * Represents a protected area
+ * @author Lucariatias
+ *
+ */
 public interface ProtectedRegion extends Region {
 	
 	/**

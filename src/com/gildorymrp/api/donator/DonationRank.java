@@ -2,6 +2,11 @@ package com.gildorymrp.api.donator;
 
 import com.gildorymrp.api.essentials.Kit;
 
+/**
+ * Represents a donation rank
+ * @author Lucariatias
+ *
+ */
 public interface DonationRank {
 	
 	/**

@@ -4,6 +4,11 @@ import java.util.Collection;
 
 import com.gildorymrp.api.regions.ProtectedRegion;
 
+/**
+ * Represents a dungeon
+ * @author Lucariatias
+ *
+ */
 public interface Dungeon {
 	
 	/**

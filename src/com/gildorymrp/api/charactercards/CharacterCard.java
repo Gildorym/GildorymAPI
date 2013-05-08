@@ -1,5 +1,10 @@
 package com.gildorymrp.api.charactercards;
 
+/**
+ * Represents a character card
+ * @author Lucariatias
+ *
+ */
 public interface CharacterCard {
 	
 	/**

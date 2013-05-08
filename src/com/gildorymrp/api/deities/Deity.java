@@ -5,6 +5,11 @@ import java.util.Map;
 
 import com.gildorymrp.api.core.Character;
 
+/**
+ * Represents a deity
+ * @author Lucariatias
+ *
+ */
 public interface Deity {
 	
 	/**

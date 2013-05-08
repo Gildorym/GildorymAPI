@@ -3,6 +3,11 @@ package com.gildorymrp.api.death;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * Represents a death management plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymDeathPlugin {
 	
 	/**

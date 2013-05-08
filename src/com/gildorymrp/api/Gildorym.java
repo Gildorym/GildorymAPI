@@ -20,6 +20,11 @@ import com.gildorymrp.api.professions.GildorymProfessionsPlugin;
 import com.gildorymrp.api.regions.GildorymRegionsPlugin;
 import com.gildorymrp.api.settlements.GildorymSettlementsPlugin;
 
+/**
+ * Main class, allows the obtaining of registered plugins for various services and registering of plugins
+ * @author Lucariatias
+ *
+ */
 public class Gildorym extends JavaPlugin {
 	
 	private static GildorymEssentialsPlugin essentialsPlugin;

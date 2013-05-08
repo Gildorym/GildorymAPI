@@ -3,6 +3,11 @@ package com.gildorymrp.api.economy;
 import org.bukkit.entity.Player;
 import com.gildorymrp.api.core.Character;
 
+/**
+ * Represents an economy plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymEconomyPlugin {
 	
 	/**

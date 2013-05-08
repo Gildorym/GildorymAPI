@@ -4,6 +4,11 @@ import java.util.Map;
 
 import org.bukkit.Location;
 
+/**
+ * Represents an essentials plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymEssentialsPlugin {
 	
 	/**

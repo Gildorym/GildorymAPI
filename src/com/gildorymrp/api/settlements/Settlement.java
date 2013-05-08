@@ -6,6 +6,11 @@ import org.bukkit.entity.Player;
 
 import com.gildorymrp.api.regions.ProtectedRegion;
 
+/**
+ * Represents a settlement
+ * @author Lucariatias
+ *
+ */
 public interface Settlement {
 	
 	/**

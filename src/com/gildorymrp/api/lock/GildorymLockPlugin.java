@@ -5,6 +5,11 @@ import java.util.Collection;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
+/**
+ * Represents a lock plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymLockPlugin {
 	
 	/**

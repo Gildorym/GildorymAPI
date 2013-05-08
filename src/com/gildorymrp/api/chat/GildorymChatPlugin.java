@@ -4,6 +4,11 @@ import java.util.Collection;
 
 import org.bukkit.entity.Player;
 
+/**
+ * Represents a chat plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymChatPlugin {
 	
 	/**

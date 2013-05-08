@@ -2,6 +2,11 @@ package com.gildorymrp.api.permissions;
 
 import org.bukkit.entity.Player;
 
+/**
+ * Represents a permissions plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymPermissionsPlugin {
 	
 	/**

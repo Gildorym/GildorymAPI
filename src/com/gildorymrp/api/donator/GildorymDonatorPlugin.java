@@ -4,6 +4,11 @@ import java.util.Collection;
 
 import org.bukkit.entity.Player;
 
+/**
+ * Represents a donation management plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymDonatorPlugin {
 	
 	/**

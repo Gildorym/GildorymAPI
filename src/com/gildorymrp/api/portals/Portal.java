@@ -2,6 +2,11 @@ package com.gildorymrp.api.portals;
 
 import org.bukkit.Location;
 
+/**
+ * Represents a portal
+ * @author Lucariatias
+ *
+ */
 public interface Portal {
 	
 	/**

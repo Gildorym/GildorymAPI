@@ -2,6 +2,11 @@ package com.gildorymrp.api.dungeon;
 
 import java.util.Collection;
 
+/**
+ * Represents a dungeon plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymDungeonPlugin {
 	
 	/**

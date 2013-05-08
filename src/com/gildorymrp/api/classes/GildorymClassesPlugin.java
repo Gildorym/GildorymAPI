@@ -1,10 +1,19 @@
 package com.gildorymrp.api.classes;
 
+import java.util.Collection;
+import java.util.Map;
+
 import org.bukkit.entity.Player;
 
 import com.gildorymrp.api.classes.Class;
 import com.gildorymrp.api.core.Character;
+import com.gildorymrp.api.core.Skill;
 
+/**
+ * Represents a classes plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymClassesPlugin {
 	
 	/**
@@ -236,5 +245,164 @@ public interface GildorymClassesPlugin {
 	 * @param amount the amount of experience to give
 	 */
 	public void giveExperience(Character character, Class clazz, int amount);
+	
+	/**
+	 * Gets the HP bonus given by a particular class
+	 * 
+	 * @param clazz the class
+	 * @return the HP bonus given by that class
+	 */
+	public int getHpBonus(Class clazz);
+	
+	/**
+	 * Sets a class' HP bonus
+	 * 
+	 * @param clazz the class
+	 * @param hpBonus the HP bonus to set
+	 */
+	public void setHpBonus(Class clazz, int hpBonus);
+	
+	/**
+	 * Gets a map of levels to a collection containing the skills they grant for a given class
+	 * 
+	 * @param clazz the class
+	 * @return a map of levels to a collection containing the skills they grant
+	 */
+	public Map<Integer, Collection<Skill>> getGrantedSkills(Class clazz);
+	
+	/**
+	 * Gets the maximum level a character of a given class may reach
+	 * 
+	 * @param clazz the class
+	 * @return the maximum level a character of the given class may reach
+	 */
+	public int getMaxLevel(Class clazz);
+	
+	/**
+	 * Sets the maximum level a character of a given class may reach
+	 * 
+	 * @param clazz the class
+	 * @param maxLevel the maximum level to set
+	 */
+	public void setMaxLevel(Class clazz, int maxLevel);
+	
+	/**
+	 * Gets the class skill modifier for a given class
+	 * 
+	 * @param clazz the class
+	 * @return the class skill modifier
+	 */
+	public int getClassSkillModifier(Class clazz);
+	
+	/**
+	 * Gets the good base save bonus at a given level
+	 * 
+	 * @param level the level
+	 * @return the good base save bonus at the level
+	 */
+	public int getBaseSaveBonusGood(int level);
+	
+	/**
+	 * Gets the poor base save bonus at a given level
+	 * 
+	 * @param level the level
+	 * @return the poor base save bonus at the level
+	 */
+	public int getBaseSaveBonusPoor(int level);
+	
+	/**
+	 * Gets the good base attack bonus at a given level
+	 * 
+	 * @param level the level
+	 * @return the good base attack bonus at the level
+	 */
+	public int getBaseAttackBonusGood(int level);
+	
+	/**
+	 * Gets the average base attack bonus at a given level
+	 * 
+	 * @param level the level
+	 * @return the average base attack bonus at the level
+	 */
+	public int getBaseAttackBonusAverage(int level);
+	
+	/**
+	 * Gets the poor base attack bonus at a given level
+	 * 
+	 * @param level the level
+	 * @return the poor base attack bonus at the level
+	 */
+	public int getBaseAttackBonusPoor(int level);
+	
+	/**
+	 * Gets the maximum class skills at a given level
+	 * 
+	 * @param level the level
+	 * @return the maximum class skills at the level
+	 */
+	public int getMaxClassSkill(Class clazz, int level);
+	
+	/**
+	 * Gets the maximum cross class skills at a given level
+	 * 
+	 * @param level the level
+	 * @return the maximum cross class skills at the level
+	 */
+	public int getMaxCrossClassSkill(int level);
+	
+	/**
+	 * Gets the attack bonus of a given class at the given level
+	 * 
+	 * @param clazz the class
+	 * @param level the level
+	 * @return the class' attack bonus
+	 */
+	public int getAttackBonus(Class clazz, int level);
+	
+	/**
+	 * Gets the fortitude save of the given class at the given level
+	 * 
+	 * @param clazz the class
+	 * @param level the level
+	 * @return the fortitude save of the class
+	 */
+	public int getFortitudeSave(Class clazz, int level);
+	
+	/**
+	 * Gets the reflex save of a given class at a given level
+	 * 
+	 * @param clazz the class
+	 * @param level the level
+	 * @return the reflex save of the class
+	 */
+	public int getReflexSave(Class clazz, int level);
+	
+	/**
+	 * Gets the will save of a given class at a given level
+	 * 
+	 * @param clazz the class
+	 * @param level the level
+	 * @return the will save of the class
+	 */
+	public int getWillSave(Class clazz, int level);
+	
+	/**
+	 * Gets the maximum skills at a certain level
+	 * 
+	 * @param level the level
+	 * @param intelligenceModifier the intelligence modifier of the character
+	 * @param isHuman whether the character is human or not
+	 * @return the maximum skills
+	 */
+	public int maxSkills(int level, int intelligenceModifier, boolean isHuman);
+	
+	/**
+	 * Gets whether a skill is a class skill for a given class
+	 * 
+	 * @param clazz the class
+	 * @param skill the skill
+	 * @return true if the skill is a class skill for the given class, false if the skill is a cross-class skill
+	 */
+	public boolean isClassSkill(Class clazz, Skill skill);
 
 }

@@ -4,6 +4,11 @@ import java.util.Collection;
 
 import org.bukkit.World;
 
+/**
+ * Represents a multiworld plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymMultiworldPlugin {
 	
 	/**

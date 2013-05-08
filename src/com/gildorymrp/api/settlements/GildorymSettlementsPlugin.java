@@ -2,6 +2,11 @@ package com.gildorymrp.api.settlements;
 
 import java.util.Collection;
 
+/**
+ * Represents a settlements plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymSettlementsPlugin {
 	
 	/**

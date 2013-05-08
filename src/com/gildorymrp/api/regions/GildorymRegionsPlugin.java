@@ -2,6 +2,11 @@ package com.gildorymrp.api.regions;
 
 import java.util.Collection;
 
+/**
+ * Represents a regions plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymRegionsPlugin {
 	
 	/**

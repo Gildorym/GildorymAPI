@@ -5,6 +5,11 @@ import org.bukkit.entity.Player;
 
 import com.gildorymrp.api.core.Character;
 
+/**
+ * Represents a deities plugin
+ * @author Lucariatias
+ *
+ */
 public interface GildorymDeitiesPlugin {
 	
 	/**
