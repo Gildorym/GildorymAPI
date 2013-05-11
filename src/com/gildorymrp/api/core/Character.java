@@ -3,6 +3,7 @@ package com.gildorymrp.api.core;
 import java.util.Collection;
 import java.util.Map;
 import org.bukkit.Location;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 /**
@@ -11,6 +12,20 @@ import org.bukkit.inventory.ItemStack;
  *
  */
 public interface Character {
+	
+	/**
+	 * Gets the player currently playing this character
+	 * 
+	 * @return the player currently playing this character, or null if this character is not being played
+	 */
+	public Player getPlayer();
+	
+	/**
+	 * Sets the player currently playing this character
+	 * 
+	 * @param player the player to set, or null if no player is playing this character
+	 */
+	public void setPlayer(Player player);
 	
 	/**
 	 * Gets the alignment of the character

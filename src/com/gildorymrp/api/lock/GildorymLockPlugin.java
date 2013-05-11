@@ -3,7 +3,8 @@ package com.gildorymrp.api.lock;
 import java.util.Collection;
 
 import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
+
+import com.gildorymrp.api.core.Character;
 
 /**
  * Represents a lock plugin
@@ -21,18 +22,34 @@ public interface GildorymLockPlugin {
 	public boolean isLocked(Block block);
 	
 	/**
+	 * Sets a block's locked state
+	 * 
+	 * @param block the block
+	 * @param lock whether the block is locked or not
+	 */
+	public void setLocked(Block block, boolean lock);
+	
+	/**
 	 * Gets the owner of a block
 	 * 
 	 * @param block the block
-	 * @return the player, or null if the block is not locked
+	 * @return the character, or null if the block is not locked
 	 */
-	public Player getOwner(Block block);
+	public Character getOwner(Block block);
 	
 	/**
-	 * Gets a collection of the players who can access this block
+	 * Sets the owner of a block
 	 * 
-	 * @return a collection of players who can access this block
+	 * @param block the block
+	 * @param owner the owner of the block
 	 */
-	public Collection<Player> getAccessors();
+	public void setOwner(Block block, Character owner);
+	
+	/**
+	 * Gets a collection of the characters who can access this block
+	 * 
+	 * @return a collection of characters who can access this block
+	 */
+	public Collection<Character> getAccessors();
 
 }
