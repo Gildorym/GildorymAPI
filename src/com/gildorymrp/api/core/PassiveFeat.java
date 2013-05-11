@@ -12,7 +12,7 @@ public interface PassiveFeat extends Feat {
 	/**
 	 * Gets a map containing any stat bonuses this feat grants
 	 * 
-	 * @return a mpa of skills to the amount this feat boosts that skill
+	 * @return a map of skills to the amount this feat boosts that skill
 	 */
 	public Map<Skill, Integer> getStatBonuses();
 
