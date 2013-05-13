@@ -4,7 +4,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 
-import com.gildorymrp.api.portals.Portal;
+import com.gildorymrp.api.plugin.portals.Portal;
 
 /**
  * Called when a player destroys a portal

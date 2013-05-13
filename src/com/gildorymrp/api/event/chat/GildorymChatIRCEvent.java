@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 
-import com.gildorymrp.api.chat.Channel;
+import com.gildorymrp.api.plugin.chat.Channel;
 
 /**
  * Called when someone in IRC chats

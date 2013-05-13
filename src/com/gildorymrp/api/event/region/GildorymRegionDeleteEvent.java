@@ -2,7 +2,7 @@ package com.gildorymrp.api.event.region;
 
 import org.bukkit.event.Cancellable;
 
-import com.gildorymrp.api.regions.Region;
+import com.gildorymrp.api.plugin.regions.Region;
 
 /**
  * Called when a region is deleted

@@ -3,7 +3,7 @@ package com.gildorymrp.api.event.classes;
 import org.bukkit.event.HandlerList;
 
 import com.gildorymrp.api.event.GildorymEvent;
-import com.gildorymrp.api.classes.Class;
+import com.gildorymrp.api.plugin.classes.Class;
 
 /**
  * Represents a class related event

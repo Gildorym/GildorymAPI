@@ -2,8 +2,8 @@ package com.gildorymrp.api.event.settlement;
 
 import org.bukkit.event.Cancellable;
 
-import com.gildorymrp.api.settlements.Settlement;
-import com.gildorymrp.api.settlements.SettlementStage;
+import com.gildorymrp.api.plugin.settlements.Settlement;
+import com.gildorymrp.api.plugin.settlements.SettlementStage;
 
 /**
  * Called when a settlement is created

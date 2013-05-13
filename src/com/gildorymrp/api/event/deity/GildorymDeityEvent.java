@@ -2,8 +2,8 @@ package com.gildorymrp.api.event.deity;
 
 import org.bukkit.event.HandlerList;
 
-import com.gildorymrp.api.deities.Deity;
 import com.gildorymrp.api.event.GildorymEvent;
+import com.gildorymrp.api.plugin.deities.Deity;
 
 /**
  * Represents a deity related event

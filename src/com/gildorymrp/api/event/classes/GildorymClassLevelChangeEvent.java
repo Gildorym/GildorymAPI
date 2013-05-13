@@ -2,8 +2,8 @@ package com.gildorymrp.api.event.classes;
 
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
-import com.gildorymrp.api.core.Character;
-import com.gildorymrp.api.classes.Class;
+import com.gildorymrp.api.plugin.classes.Class;
+import com.gildorymrp.api.plugin.core.Character;
 
 /**
  * Called when a character's level changes

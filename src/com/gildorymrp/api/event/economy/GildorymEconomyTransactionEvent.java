@@ -3,7 +3,7 @@ package com.gildorymrp.api.event.economy;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 
-import com.gildorymrp.api.core.Character;
+import com.gildorymrp.api.plugin.core.Character;
 
 /**
  * Called when money is transferred from one player to another

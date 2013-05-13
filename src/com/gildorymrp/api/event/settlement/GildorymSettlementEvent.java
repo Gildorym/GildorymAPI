@@ -3,7 +3,7 @@ package com.gildorymrp.api.event.settlement;
 import org.bukkit.event.HandlerList;
 
 import com.gildorymrp.api.event.GildorymEvent;
-import com.gildorymrp.api.settlements.Settlement;
+import com.gildorymrp.api.plugin.settlements.Settlement;
 
 /**
  * Represents a settlement related event

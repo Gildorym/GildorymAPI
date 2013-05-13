@@ -3,7 +3,7 @@ package com.gildorymrp.api.event.character;
 import org.bukkit.event.HandlerList;
 
 import com.gildorymrp.api.event.GildorymEvent;
-import com.gildorymrp.api.core.Character;
+import com.gildorymrp.api.plugin.core.Character;
 
 /**
  * Represents an event involving a character

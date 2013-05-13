@@ -3,8 +3,8 @@ package com.gildorymrp.api.event.deity;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 
-import com.gildorymrp.api.core.Character;
-import com.gildorymrp.api.deities.Deity;
+import com.gildorymrp.api.plugin.core.Character;
+import com.gildorymrp.api.plugin.deities.Deity;
 
 /**
  * Called when a player worships a deity
