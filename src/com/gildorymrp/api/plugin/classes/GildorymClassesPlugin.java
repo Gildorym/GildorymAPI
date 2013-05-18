@@ -311,14 +311,6 @@ public interface GildorymClassesPlugin {
 	public int getMaxLevel(Class clazz);
 	
 	/**
-	 * Sets the maximum level a character of a given class may reach
-	 * 
-	 * @param clazz the class
-	 * @param maxLevel the maximum level to set
-	 */
-	public void setMaxLevel(Class clazz, int maxLevel);
-	
-	/**
 	 * Gets the class skill modifier for a given class
 	 * 
 	 * @param clazz the class
