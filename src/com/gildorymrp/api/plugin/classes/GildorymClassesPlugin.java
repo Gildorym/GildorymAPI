@@ -395,14 +395,12 @@ public interface GildorymClassesPlugin {
 	public int getWillSave(Class clazz, int level);
 	
 	/**
-	 * Gets the maximum skills at a certain level
+	 * Gets the maximum skills for a character
 	 * 
-	 * @param level the level
-	 * @param intelligenceModifier the intelligence modifier of the character
-	 * @param isHuman whether the character is human or not
+	 * @param character the character
 	 * @return the maximum skills
 	 */
-	public int maxSkills(int level, int intelligenceModifier, boolean isHuman);
+	public int maxSkills(Character character);
 	
 	/**
 	 * Gets whether a skill is a class skill for a given class
