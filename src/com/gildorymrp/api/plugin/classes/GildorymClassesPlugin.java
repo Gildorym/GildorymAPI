@@ -246,6 +246,14 @@ public interface GildorymClassesPlugin {
 	public void setExperienceTowardsNextLevel(Character character, Class clazz, int amount);
 	
 	/**
+	 * Gives a character an amount of experience in their current class
+	 * 
+	 * @param character the character
+	 * @param amount the amount of experience to give
+	 */
+	public void giveExperience(Character character, int amount);
+	
+	/**
 	 * Gives a character an amount of experience in a given class
 	 * 
 	 * @param character the character
@@ -261,14 +269,6 @@ public interface GildorymClassesPlugin {
 	 * @return the HP bonus given by that class
 	 */
 	public int getHpBonus(Class clazz);
-	
-	/**
-	 * Sets a class' HP bonus
-	 * 
-	 * @param clazz the class
-	 * @param hpBonus the HP bonus to set
-	 */
-	public void setHpBonus(Class clazz, int hpBonus);
 	
 	/**
 	 * Gets a map of levels to a collection containing the skills they grant for a given class
