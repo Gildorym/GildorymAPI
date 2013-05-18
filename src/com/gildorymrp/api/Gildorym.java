@@ -2,7 +2,6 @@ package com.gildorymrp.api;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.gildorymrp.api.plugin.charactercards.GildorymCharacterCardsPlugin;
 import com.gildorymrp.api.plugin.chat.GildorymChatPlugin;
 import com.gildorymrp.api.plugin.classes.GildorymClassesPlugin;
 import com.gildorymrp.api.plugin.core.GildorymCorePlugin;
@@ -28,7 +27,6 @@ import com.gildorymrp.api.plugin.settlements.GildorymSettlementsPlugin;
  */
 public class Gildorym extends JavaPlugin {
 	
-	private static GildorymCharacterCardsPlugin characterCardsPlugin;
 	private static GildorymChatPlugin chatPlugin;
 	private static GildorymClassesPlugin classesPlugin;
 	private static GildorymCorePlugin corePlugin;
@@ -46,24 +44,6 @@ public class Gildorym extends JavaPlugin {
 	private static GildorymProfessionsPlugin professionsPlugin;
 	private static GildorymRegionsPlugin regionsPlugin;
 	private static GildorymSettlementsPlugin settlementsPlugin;
-	
-	/**
-	 * Gets the active character cards plugin on the server
-	 * 
-	 * @return the character cards plugin
-	 */
-	public static GildorymCharacterCardsPlugin getCharacterCardsPlugin() {
-		return characterCardsPlugin;
-	}
-
-	/**
-	 * Registers a character cards plugin to the server
-	 * 
-	 * @param plugin the character cards plugin to register
-	 */
-	public static void registerCharacterCardsPlugin(GildorymCharacterCardsPlugin plugin) {
-		Gildorym.characterCardsPlugin = plugin;
-	}
 
 	/**
 	 * Gets the active chat plugin on the server

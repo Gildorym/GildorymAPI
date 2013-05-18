@@ -14,6 +14,83 @@ import org.bukkit.inventory.ItemStack;
 public interface Character {
 	
 	/**
+	 * Gets the name of the character 
+	 * 
+	 * @return the character's name
+	 */
+	public String getName();
+	
+	/**
+	 * Sets the name of the character 
+	 * 
+	 * @param name the name to set
+	 */
+	public void setName(String name);
+	
+	/**
+	 * Gets the age of the character 
+	 * 
+	 * @return the character's age
+	 */
+	public int getAge();
+	
+	/**
+	 * Sets the age of the character 
+	 * 
+	 * @param age the age to set
+	 */
+	public void setAge(int age);
+	
+	/**
+	 * Gets the gender of the character 
+	 * 
+	 * @return the character's gender
+	 */
+	public String getGender();
+	
+	/**
+	 * Sets the gender of the character 
+	 * 
+	 * @param gender the gender to set
+	 */
+	public void setGender(Gender gender);
+	
+	/**
+	 * Gets the race of the character 
+	 * 
+	 * @return the character's race
+	 */
+	public Race getRace();
+	
+	/**
+	 * Sets the race of the character 
+	 * 
+	 * @param race the race to set
+	 */
+	public void setRace(Race race);
+	
+	/**
+	 * Gets the description of the character 
+	 * 
+	 * @return the character's description
+	 */
+	public String getDescription();
+	
+	/**
+	 * Sets the description of the character 
+	 * 
+	 * @param info the info to set
+	 */
+	public void setDescription(String info);
+	
+	/**
+	 * Adds to the description of the character 
+	 * 
+	 * @param info the info to add
+	 */
+	public void addDescription(String info);
+	
+	/**
 	 * Gets the player currently playing this character
 	 * 
 	 * @return the player currently playing this character, or null if this character is not being played
@@ -142,11 +219,25 @@ public interface Character {
 	public int getStrength();
 	
 	/**
+	 * Sets the character's strength
+	 * 
+	 * @param strength the strength to set
+	 */
+	public void setStrength(int strength);
+	
+	/**
 	 * Gets the character's dexterity
 	 * 
 	 * @return the dexterity
 	 */
 	public int getDexterity();
+	
+	/**
+	 * Sets the character's dexterity
+	 * 
+	 * @param dexterity the dexterity to set
+	 */
+	public void setDexterity(int dexterity);
 	
 	/**
 	 * Gets the character's constitution
@@ -156,11 +247,25 @@ public interface Character {
 	public int getConstitution();
 	
 	/**
+	 * Sets the character's constitution
+	 * 
+	 * @param constitution the constitution to set
+	 */
+	public void setConstitution(int constitution);
+	
+	/**
 	 * Gets the character's intelligence
 	 * 
 	 * @return the intelligence
 	 */
 	public int getIntelligence();
+	
+	/**
+	 * Sets the character's intelligence
+	 * 
+	 * @param intelligence the intelligence to set
+	 */
+	public void setIntelligence(int intelligence);
 	
 	/**
 	 * Gets the character's wisdom
@@ -170,11 +275,25 @@ public interface Character {
 	public int getWisdom();
 	
 	/**
+	 * Sets the character's wisdom
+	 * 
+	 * @param wisdom the wisdom to set
+	 */
+	public void setWisdom(int wisdom);
+	
+	/**
 	 * Gets the character's charisma
 	 * 
 	 * @return the charisma
 	 */
 	public int getCharisma();
+	
+	/**
+	 * Sets the character's charisma
+	 * 
+	 * @param charisma the charisma to set
+	 */
+	public void setCharisma(int charisma);
 	
 	/**
 	 * Gets the modifier for a stat

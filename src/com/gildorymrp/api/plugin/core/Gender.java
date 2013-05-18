@@ -1,4 +1,4 @@
-package com.gildorymrp.api.plugin.charactercards;
+package com.gildorymrp.api.plugin.core;
 
 /**
  * An enum containing genders
