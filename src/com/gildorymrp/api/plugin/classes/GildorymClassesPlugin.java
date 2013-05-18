@@ -340,7 +340,7 @@ public interface GildorymClassesPlugin {
 	 * @param level the level
 	 * @return the maximum class skills at the level
 	 */
-	public int getMaxClassSkill(Class clazz, int level);
+	public int getMaxClassSkill(int level);
 	
 	/**
 	 * Gets the maximum cross class skills at a given level
