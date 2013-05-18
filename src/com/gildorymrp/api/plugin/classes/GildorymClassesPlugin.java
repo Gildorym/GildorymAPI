@@ -210,6 +210,14 @@ public interface GildorymClassesPlugin {
 	public int getTotalExperience(Character character);
 	
 	/**
+	 * Sets the total experience of a character in their current class
+	 * 
+	 * @param character the character
+	 * @param amount the amount of experience to set
+	 */
+	public void setTotalExperience(Character character, int amount);
+	
+	/**
 	 * Gets the total experience of a character in a given class
 	 * 
 	 * @param character the character
@@ -228,11 +236,27 @@ public interface GildorymClassesPlugin {
 	public void setTotalExperience(Character character, Class clazz, int amount);
 	
 	/**
+	 * Gets the experience towards the next level of a character in their current class
+	 * 
+	 * @param character the character
+	 * @return the experience of the character towards the next level in their current class
+	 */
+	public int getExperienceTowardsNextLevel(Character character);
+	
+	/**
+	 * Sets the experience towards the next level of a character in their current class
+	 * 
+	 * @param character the character
+	 * @param amount the amount of experience to set
+	 */
+	public void setExperienceTowardsNextLevel(Character character, int amount);
+	
+	/**
 	 * Gets the experience towards the next level of a character in a given class
 	 * 
 	 * @param character the character
 	 * @param clazz the class
-	 * @return the experience of the player's active character in the given class
+	 * @return the experience of the character towards the next level in the given class
 	 */
 	public int getExperienceTowardsNextLevel(Character character, Class clazz);
 	
