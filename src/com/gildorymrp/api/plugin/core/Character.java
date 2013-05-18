@@ -119,11 +119,62 @@ public interface Character {
 	public Map<Skill, Integer> getSkills();
 	
 	/**
+	 * Adds skill points to the given skill from the character's skill points
+	 * 
+	 * @param skill the skill
+	 * @param amount the amount to assign to the skill
+	 * @return whether successful
+	 */
+	public boolean addSkillPoints(Skill skill, int amount);
+	
+	/**
 	 * Gets a collection containing the feats this character has
 	 * 
 	 * @return a collection of the feats obtained by this character
 	 */
 	public Collection<Feat> getFeats();
+	
+	/**
+	 * Gets the character's strength
+	 * 
+	 * @return the strength
+	 */
+	public int getStrength();
+	
+	/**
+	 * Gets the character's dexterity
+	 * 
+	 * @return the dexterity
+	 */
+	public int getDexterity();
+	
+	/**
+	 * Gets the character's constitution
+	 * 
+	 * @return the constitution
+	 */
+	public int getConstitution();
+	
+	/**
+	 * Gets the character's intelligence
+	 * 
+	 * @return the intelligence
+	 */
+	public int getIntelligence();
+	
+	/**
+	 * Gets the character's wisdom
+	 * 
+	 * @return the wisdom
+	 */
+	public int getWisdom();
+	
+	/**
+	 * Gets the character's charisma
+	 * 
+	 * @return the charisma
+	 */
+	public int getCharisma();
 	
 	/**
 	 * Gets the modifier for a stat
@@ -132,6 +183,13 @@ public interface Character {
 	 * @return the modifier for the stat
 	 */
 	public int getModifier(int stat);
+	
+	/**
+	 * Recursively rolls the stats of this character
+	 * 
+	 * @param countdown the amount of times to roll stats before settling
+	 */
+	public void rollStats(int countdown);
 	
 	/**
 	 * Gets whether the character is dead or not
