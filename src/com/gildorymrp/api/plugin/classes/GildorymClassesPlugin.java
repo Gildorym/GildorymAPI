@@ -202,6 +202,14 @@ public interface GildorymClassesPlugin {
 	public void setLevel(Character character, Class clazz, int level);
 	
 	/**
+	 * Gets the total experience a character has on their current class
+	 * 
+	 * @param character the character
+	 * @return the total experience the character has in their current class
+	 */
+	public int getTotalExperience(Character character);
+	
+	/**
 	 * Gets the total experience of a character in a given class
 	 * 
 	 * @param character the character
