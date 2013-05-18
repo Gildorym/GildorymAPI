@@ -434,5 +434,21 @@ public interface GildorymClassesPlugin {
 	 * @return true if the skill is a class skill for the given class, false if the skill is a cross-class skill
 	 */
 	public boolean isClassSkill(Class clazz, Skill skill);
+	
+	/**
+	 * Gets the total experience required from level one to reach the given level
+	 * 
+	 * @param level the level
+	 * @return the experience to get to the level
+	 */
+	public int getTotalExperienceForLevel(int level);
+	
+	/**
+	 * Gets the total amount of experience required to get to the next level, from the start of the given level
+	 * 
+	 * @param level the current level
+	 * @return the experience required at this level to reach the next
+	 */
+	public int getExpToNextLevel(int level);
 
 }
