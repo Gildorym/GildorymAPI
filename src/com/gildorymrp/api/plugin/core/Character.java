@@ -126,6 +126,14 @@ public interface Character {
 	public Collection<Feat> getFeats();
 	
 	/**
+	 * Gets the modifier for a stat
+	 * 
+	 * @param stat the stat
+	 * @return the modifier for the stat
+	 */
+	public int getModifier(int stat);
+	
+	/**
 	 * Gets whether the character is dead or not
 	 * 
 	 * @return true if the character is dead, otherwise false
