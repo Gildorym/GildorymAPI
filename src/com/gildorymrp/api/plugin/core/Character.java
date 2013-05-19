@@ -318,6 +318,20 @@ public interface Character {
 	public void setAttackBonus(int attackBonus);
 	
 	/**
+	 * Gets the maximum amount of skills this character may have
+	 * 
+	 * @return the max skills
+	 */
+	public int getMaxSkills();
+	
+	/**
+	 * Sets the maximum amount of skills this character may have
+	 * 
+	 * @param maxSkills the max skills to set
+	 */
+	public void setMaxSkills(int maxSkills);
+	
+	/**
 	 * Recursively rolls the stats of this character
 	 * 
 	 * @param countdown the amount of times to roll stats before settling
