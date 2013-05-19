@@ -46,7 +46,7 @@ public interface Character {
 	 * 
 	 * @return the character's gender
 	 */
-	public String getGender();
+	public Gender getGender();
 	
 	/**
 	 * Sets the gender of the character 
@@ -304,6 +304,20 @@ public interface Character {
 	public int getModifier(int stat);
 	
 	/**
+	 * Gets the character's attack bonus
+	 * 
+	 * @return the attack bonus
+	 */
+	public int getAttackBonus();
+	
+	/**
+	 * Sets the character's attack bonus
+	 * 
+	 * @param attackBonus the attack bonus to set
+	 */
+	public void setAttackBonus(int attackBonus);
+	
+	/**
 	 * Recursively rolls the stats of this character
 	 * 
 	 * @param countdown the amount of times to roll stats before settling
@@ -318,13 +332,10 @@ public interface Character {
 	public boolean isDead();
 	
 	/**
-	 * Resurrects this character
+	 * Sets whether the character is dead or not
+	 * 
+	 * @param dead whether the character should be dead or not. Use false for resurrections and true when the character is killed.
 	 */
-	public void resurrect();
-	
-	/**
-	 * Kills this character
-	 */
-	public void kill();
+	public void setDead(boolean dead);
 
 }
