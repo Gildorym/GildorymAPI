@@ -7,6 +7,7 @@ package com.gildorymrp.api.plugin.core;
  */
 public enum Race {
 	
+	DROW,
 	DWARF,
 	ELF,
 	GNOME,
