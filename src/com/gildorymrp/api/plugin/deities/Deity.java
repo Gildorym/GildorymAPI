@@ -34,11 +34,18 @@ public interface Deity {
 	public Collection<Character> getWorshippers();
 	
 	/**
-	 * Gets the power of this deity
+	 * Gets the power of the deity
 	 * 
 	 * @return this deity's power
 	 */
 	public int getPower();
+	
+	/**
+	 * Sets the power of the deity
+	 * 
+	 * @param power the power to set
+	 */
+	public void setPower(int power);
 	
 	/**
 	 * Gets a map of each worshipper of this deity to the amount of times they have prayed
