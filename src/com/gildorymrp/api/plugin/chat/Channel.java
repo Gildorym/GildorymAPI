@@ -76,10 +76,38 @@ public interface Channel {
 	public Collection<Player> getSpeakers();
 	
 	/**
+	 * Adds a speaker to the channel
+	 * 
+	 * @param speaker the speaker to add
+	 */
+	public void addSpeaker(Player speaker);
+	
+	/**
+	 * Removes a speaker from the channel
+	 * 
+	 * @param speaker the speaker to remove
+	 */
+	public void removeSpeaker(Player speaker);
+	
+	/**
 	 * Gets a collection of the players listening to the channel
 	 * 
 	 * @return a collection of the players listening to the channel
 	 */
 	public Collection<Player> getListeners();
+	
+	/**
+	 * Adds a listener to the channel
+	 * 
+	 * @param listener the listener to add
+	 */
+	public void addListener(Player listener);
+	
+	/**
+	 * Removes a listener from the channel
+	 * 
+	 * @param listener the listener to remove
+	 */
+	public void removeListener(Player listener);
 
 }
