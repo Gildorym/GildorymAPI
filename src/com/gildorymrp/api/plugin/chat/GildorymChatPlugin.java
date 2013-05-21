@@ -19,6 +19,14 @@ public interface GildorymChatPlugin {
 	public Collection<Channel> getChannels();
 	
 	/**
+	 * Gets the channel with the given name
+	 * 
+	 * @param name the name of the channel
+	 * @return the channel with the given name
+	 */
+	public Channel getChannel(String name);
+	
+	/**
 	 * Gets the channel the given player is speaking in
 	 * 
 	 * @param player the player
