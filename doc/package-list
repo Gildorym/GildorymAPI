@@ -18,6 +18,7 @@ com.gildorymrp.api.plugin.deities
 com.gildorymrp.api.plugin.donator
 com.gildorymrp.api.plugin.dungeon
 com.gildorymrp.api.plugin.economy
+com.gildorymrp.api.plugin.equipment
 com.gildorymrp.api.plugin.essentials
 com.gildorymrp.api.plugin.lock
 com.gildorymrp.api.plugin.moderation
