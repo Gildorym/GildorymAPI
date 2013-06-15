@@ -2,6 +2,8 @@ package com.gildorymrp.api.plugin.equipment;
 
 import java.util.List;
 
+import org.bukkit.inventory.ItemStack;
+
 /**
  * Represents a D&D item
  * @author Lucariatias
@@ -80,5 +82,19 @@ public interface DnDItemStack {
 	 * @param amount the amount to set
 	 */
 	public void setAmount(int amount);
+	
+	/**
+	 * Converts the D&D ItemStack into a Bukkit ItemStack
+	 * 
+	 * @return the converted itemstack
+	 */
+	public ItemStack toItemStack();
+	
+	/**
+	 * Attempts to convert the given Bukkit ItemStack into this D&D ItemStack
+	 * 
+	 * @param itemStack the bukkit itemstack to convert from
+	 */
+	public void fromItemStack(ItemStack itemStack);
 
 }
