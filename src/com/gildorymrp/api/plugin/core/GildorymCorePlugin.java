@@ -37,5 +37,14 @@ public interface GildorymCorePlugin {
 	 * @return a collection containing all of the player's characters
 	 */
 	public Collection<Character> getCharacters(Player player);
+	
+	/**
+	 * Rolls the given string, in the format [amount]d[sides]±[modifier], printing the result to players within a sixteen block radius of the roller
+	 * 
+	 * @param roller the player rolling the dice
+	 * @param rollString the string to roll, e.g. 1d20 rolls one twenty sided die
+	 * @return the total of the dice plus modifiers
+	 */
+	public int roll(Player roller, String rollString);
 
 }
