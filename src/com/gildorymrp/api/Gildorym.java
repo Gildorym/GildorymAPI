@@ -10,6 +10,7 @@ import com.gildorymrp.api.plugin.deities.GildorymDeitiesPlugin;
 import com.gildorymrp.api.plugin.donator.GildorymDonatorPlugin;
 import com.gildorymrp.api.plugin.dungeon.GildorymDungeonPlugin;
 import com.gildorymrp.api.plugin.economy.GildorymEconomyPlugin;
+import com.gildorymrp.api.plugin.equipment.GildorymEquipmentPlugin;
 import com.gildorymrp.api.plugin.essentials.GildorymEssentialsPlugin;
 import com.gildorymrp.api.plugin.lock.GildorymLockPlugin;
 import com.gildorymrp.api.plugin.moderation.GildorymModerationPlugin;
@@ -35,6 +36,7 @@ public class Gildorym extends JavaPlugin {
 	private static GildorymDonatorPlugin donatorPlugin;
 	private static GildorymDungeonPlugin dungeonPlugin;
 	private static GildorymEconomyPlugin economyPlugin;
+	private static GildorymEquipmentPlugin equipmentPlugin;
 	private static GildorymEssentialsPlugin essentialsPlugin;
 	private static GildorymLockPlugin lockPlugin;
 	private static GildorymModerationPlugin moderationPlugin;
@@ -187,6 +189,24 @@ public class Gildorym extends JavaPlugin {
 	 */
 	public static void registerEconomyPlugin(GildorymEconomyPlugin plugin) {
 		Gildorym.economyPlugin = plugin;
+	}
+	
+	/**
+	 * Gets the active equipment plugin on the server
+	 * 
+	 * @return the equipment plugin
+	 */
+	public static GildorymEquipmentPlugin getEquipmentPlugin() {
+		return equipmentPlugin;
+	}
+
+	/**
+	 * Registers an equipment plugin to the server
+	 * 
+	 * @param plugin the equipment plugin to register
+	 */
+	public static void registerEquipmentPlugin(GildorymEquipmentPlugin plugin) {
+		Gildorym.equipmentPlugin = plugin;
 	}
 
 	/**
