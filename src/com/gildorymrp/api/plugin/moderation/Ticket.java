@@ -5,6 +5,12 @@ import java.util.Date;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
 
+/**
+ * Represents a ticket
+ * 
+ * @author Lucariatias
+ *
+ */
 public interface Ticket {
 	
 	/**

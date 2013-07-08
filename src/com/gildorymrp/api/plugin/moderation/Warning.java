@@ -4,6 +4,12 @@ import java.util.Date;
 
 import org.bukkit.OfflinePlayer;
 
+/**
+ * Represents a warning
+ * 
+ * @author Lucariatias
+ *
+ */
 public interface Warning {
 	
 	/**
