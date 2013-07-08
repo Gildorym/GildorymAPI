@@ -12,7 +12,7 @@ import org.bukkit.inventory.ItemStack;
 public interface DnDItemStack {
 	
 	/**
-	 * Gets the name of this item
+	 * Gets the name of the item
 	 * It may be custom, or it may be the name of the item in D&D
 	 * 
 	 * @return the name of the item
@@ -20,17 +20,17 @@ public interface DnDItemStack {
 	public String getName();
 	
 	/**
-	 * Sets the name of this item
+	 * Sets the name of the item
 	 * 
 	 * @param name the name to set
 	 */
 	public void setName(String name);
 	
 	/**
-	 * Gets the lore of this item
+	 * Gets the lore of the item
 	 * This may include dice rolls, description, etc.
 	 * 
-	 * @return
+	 * @return the lore of the item
 	 */
 	public List<String> getLore();
 	
