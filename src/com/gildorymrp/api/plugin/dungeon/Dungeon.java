@@ -21,11 +21,39 @@ public interface Dungeon {
 	public Collection<Player> getDungeonMasters();
 	
 	/**
+	 * Adds a dungeon master to the dungeon masters responsible for this dungeon
+	 * 
+	 * @param dungeonMaster the dungeon master to add
+	 */
+	public void addDungeonMaster(Player dungeonMaster);
+	
+	/**
+	 * Removes a dungeon master from the dungeon masters responsible for this dungeon
+	 * 
+	 * @param dungeonMaster the dungeon master to remove
+	 */
+	public void removeDungeonMaster(Player dungeonMaster);
+	
+	/**
 	 * Gets a collection of the players playing in this dungeon
 	 * 
 	 * @return a collection containing the players playing this dungeon
 	 */
 	public Collection<Player> getPlayers();
+	
+	/**
+	 * Adds a player to the players playing in this dungeon
+	 * 
+	 * @param player the player to add
+	 */
+	public void addPlayer(Player player);
+	
+	/**
+	 * Removes a player from the players playing in this dungeon
+	 * 
+	 * @param player the player to remove
+	 */
+	public void removePlayer(Player player);
 	
 	/**
 	 * Gets whether the dungeon is currently active or not
