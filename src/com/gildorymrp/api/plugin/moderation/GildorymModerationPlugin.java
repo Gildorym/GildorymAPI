@@ -88,7 +88,7 @@ public interface GildorymModerationPlugin {
 	 * 
 	 * @return a collection of the warnings
 	 */
-	public Collection<String> getWarnings(Player player);
+	public Collection<Warning> getWarnings(Player player);
 	
 	/**
 	 * Adds a warning to the player
@@ -96,14 +96,14 @@ public interface GildorymModerationPlugin {
 	 * @param player the player to add a warning to
 	 * @param warning the warning to add
 	 */
-	public void addWarning(Player player, String warning);
+	public void addWarning(Player player, Warning warning);
 	
 	/**
 	 * Gets the tickets filed
 	 * 
 	 * @return a collection of all the tickets filed
 	 */
-	public Collection<String> getTickets();
+	public Collection<Ticket> getTickets();
 	
 	/**
 	 * Gets the tickets filed by a specific player
@@ -111,7 +111,7 @@ public interface GildorymModerationPlugin {
 	 * @param player the player to get tickets from
 	 * @return a collection of the tickets filed by the given player
 	 */
-	public Collection<String> getTickets(Player player);
+	public Collection<Ticket> getTickets(Player player);
 	
 	/**
 	 * Files a ticket
@@ -119,6 +119,6 @@ public interface GildorymModerationPlugin {
 	 * @param player the player who is filing the ticket
 	 * @param ticket a string containing the ticket information
 	 */
-	public void addTicket(Player player, String ticket);
+	public void addTicket(Player player, Ticket ticket);
 
 }
