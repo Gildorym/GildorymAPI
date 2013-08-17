@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gildorymrp</groupId>
   <artifactId>api</artifactId>
-  <version>0.0.14</version>
+  <version>0.0.15</version>
   <repositories>
     <repository>
       <id>bukkit-repo</id>
@@ -13,7 +13,7 @@
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
-      <version>1.5.2-R1.0</version>
+      <version>1.6.2-R0.1</version>
     </dependency>
   </dependencies>
   <build>
