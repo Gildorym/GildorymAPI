@@ -1,5 +1,7 @@
 package com.gildorymrp.api.plugin.permissions;
 
+import java.util.Set;
+
 import org.bukkit.entity.Player;
 
 /**
@@ -15,7 +17,7 @@ public interface GildorymPermissionsPlugin {
 	 * @param player the player
 	 * @return the name of the player's group
 	 */
-	public String getGroup(Player player);
+	public Set<String> getGroups(Player player);
 	
 	/**
 	 * Sets a player's group to the one of the given name
@@ -34,6 +36,14 @@ public interface GildorymPermissionsPlugin {
 	public void addGroup(Player player, String groupName);
 	
 	/**
+	 * Removes a group from a player
+	 * 
+	 * @param player the player
+	 * @param groupName the name of the group
+	 */
+	public void removeGroup(Player player, String groupName);
+	
+	/**
 	 * Checks if a player has a permission
 	 * 
 	 * @param player the player
@@ -41,7 +51,5 @@ public interface GildorymPermissionsPlugin {
 	 * @return whether the player has permission
 	 */
 	public boolean hasPermission(Player player, String node);
-	
-	
 
 }
