@@ -5,7 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.gildorymrp.api.plugin.chat.GildorymChatPlugin;
 import com.gildorymrp.api.plugin.classes.GildorymClassesPlugin;
 import com.gildorymrp.api.plugin.core.GildorymCorePlugin;
-import com.gildorymrp.api.plugin.death.GildorymDeathPlugin;
 import com.gildorymrp.api.plugin.deities.GildorymDeitiesPlugin;
 import com.gildorymrp.api.plugin.donator.GildorymDonatorPlugin;
 import com.gildorymrp.api.plugin.dungeon.GildorymDungeonPlugin;
@@ -31,7 +30,6 @@ public class Gildorym extends JavaPlugin {
 	private static GildorymChatPlugin chatPlugin;
 	private static GildorymClassesPlugin classesPlugin;
 	private static GildorymCorePlugin corePlugin;
-	private static GildorymDeathPlugin deathPlugin;
 	private static GildorymDeitiesPlugin deitiesPlugin;
 	private static GildorymDonatorPlugin donatorPlugin;
 	private static GildorymDungeonPlugin dungeonPlugin;
@@ -99,24 +97,6 @@ public class Gildorym extends JavaPlugin {
 	 */
 	public static void registerCorePlugin(GildorymCorePlugin plugin) {
 		Gildorym.corePlugin = plugin;
-	}
-
-	/**
-	 * Gets the active death plugin on the server
-	 * 
-	 * @return the death plugin
-	 */
-	public static GildorymDeathPlugin getDeathPlugin() {
-		return deathPlugin;
-	}
-
-	/**
-	 * Registers a death plugin to the server
-	 * 
-	 * @param plugin the death plugin to register
-	 */
-	public static void registerDeathPlugin(GildorymDeathPlugin plugin) {
-		Gildorym.deathPlugin = plugin;
 	}
 
 	/**
